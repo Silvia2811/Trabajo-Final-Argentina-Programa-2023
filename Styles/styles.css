@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(../imagenes/Fondo_imagen2.jpg);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+.mi_biografia{
+    background-image: url(../imagenes/Foto_Bio.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #cccccc;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1 .imagen1 {
+    width: 350px;
+}
+
+header .imagen2 {
+    width: 150px;
+}
+
+header {
+    border: 2px solid rgba(0, 0, 0, 0.377);
+    background-color: rgba(187, 187, 132, 0.384);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+      
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+          
+}
+
+nav ul li{
+    margin: 10px;
+    padding: 20px;    
+      
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(16, 43, 56);
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 35px;
+    font-weight: bold; 
+    
+}
+
+nav ul li :hover{
+    border: 3px solid rgb(54, 53, 53);
+    border-radius: 15px;
+    padding: 10px;  
+}
+
+main{
+    width: 98%;
+    margin: 20px auto;
+}
+
+main .sinopsis {
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 220, 0.507);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+main .sinopsis .imagen-sinopsis img{
+    width: 300px;
+    
+}
+main .texto{
+    text-align: justify;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+}
+
+main .texto h2{
+   margin: 10px ;
+   margin-left: 0px;
+   font-size: 40px;
+   
+}
+
+main .texto p{
+    padding: 0px;
+          
+}
+
+.titulo_personajes{
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 220, 0.507);
+    padding: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.cont_personajes {
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 220, 0.507);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+
+.grid-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+    border: 3px solid black;
+    background-image:url(../imagenes/Fondo_Imagen2.jpg);
+    color: white; 
+}    
+
+.grid-item img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.grid-item h3{
+   padding-bottom: 10px;
+}
+
+.ver-serie{
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 220, 0.507);
+    padding: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+}
+
+.ver_serie_img img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+.ver_serie_texto h2{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 35px;
+}
+footer{
+    border: 2px solid rgba(0, 0, 0, 0.377);
+    background-color: rgba(245, 245, 220, 0.062);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+}
+
+
+footer div ul li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+footer div h3,p{
+    padding: 5px;
+    
+}
+
+footer div ul li i{
+    font-size: 30px;
+}
+
+footer div span{
+    font-size: 26px;
+}
+
+.container {
+    float: left;
+    width: 80%;
+    padding: 20px;
+    margin-top: 10px;
+        
+}
+
+.parrafo{
+    text-align: justify;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+       
+}
+.mi_biografia p a{
+    font-size: 20px;
+    color: black;
+    
+}
+.volver{
+    margin-top: 20px;
+}
+/*Media Query*/
+
+@media (max-width: 480px){
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    nav ul li a{
+        font-size: 25px;
+        font-weight: bold;    
+        
+    }
+    nav ul li{
+        padding: 10px;
+        margin: 5px; 
+                
+    }
+    nav ul li :hover{
+        border: 2px solid rgb(87, 86, 86);
+        border-radius: 15px;  
+    }
+
+    main .sinopsis .imagen-sinopsis img{
+        display: none;
+        
+    }
+    main .sinopsis {
+        margin: 20px auto;
+        border-radius: 10px;
+        background-color: rgba(245, 245, 220, 0.507);
+        background-image: url(../imagenes/Imagen_header2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px;
+    }
+
+    .ver-serie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
