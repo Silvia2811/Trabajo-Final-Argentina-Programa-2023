@@ -7,9 +7,10 @@
 body{
     background-image: url(../imagenes/Fondo_imagen2.jpg);
     background-repeat: no-repeat;
-    background-color: #cccccc;
+    background-color: #2729a8;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     
     
 }
@@ -21,6 +22,7 @@ body{
     background-color: #cccccc;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 header h1 .imagen1 {
@@ -84,19 +86,22 @@ main .sinopsis {
 }
 
 main .sinopsis .imagen-sinopsis img{
-    width: 300px;
-    
+    width: 350px;
 }
+
 main .texto{
     text-align: justify;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: bold;
+    
 }
 
 main .texto h2{
    margin: 10px ;
    margin-left: 0px;
    font-size: 40px;
+   font-weight: bold;
    
 }
 
@@ -110,10 +115,10 @@ main .texto p{
     border-radius: 10px;
     background-color: rgba(245, 245, 220, 0.507);
     padding: 20px;
-    font-family: 'Archivo Narrow', sans-serif;
     font-size: 40px;
     text-align: center;
-    
+    font-weight: bold;
+       
 }
 .cont_personajes {
     margin: 20px auto;
@@ -136,6 +141,7 @@ main .texto p{
     margin: 10px;
     border: 3px solid black;
     background-image:url(../imagenes/Fondo_Imagen2.jpg);
+    font-size: 20px;
     color: white; 
 }    
 
@@ -146,6 +152,7 @@ main .texto p{
 
 .grid-item h3{
    padding-bottom: 10px;
+   padding-top: 10px;
 }
 
 .ver-serie{
@@ -153,8 +160,8 @@ main .texto p{
     border-radius: 10px;
     background-color: rgba(245, 245, 220, 0.507);
     padding: 20px;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     display: flex;
     gap: 20px;
     justify-content: left;
@@ -167,8 +174,9 @@ main .texto p{
 }
 
 .ver_serie_texto h2{
-    font-family: 'Archivo Narrow', sans-serif;
     font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 footer{
     border: 2px solid rgba(0, 0, 0, 0.377);
@@ -177,13 +185,9 @@ footer{
     justify-content: space-between; 
     align-items: center;
     padding: 10px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     font-weight: bold;
-    
-    
 }
-
 
 footer div ul li{
     list-style-type: none;
@@ -196,7 +200,6 @@ footer div ul li{
 
 footer div ul li a{
     text-decoration: none;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     color: black;
 }
@@ -224,8 +227,8 @@ footer div span{
 
 .parrafo{
     text-align: justify;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 28px;
+    font-weight: bold;
     line-height: 1.5;
        
 }
@@ -237,7 +240,7 @@ footer div span{
 .volver{
     margin-top: 20px;
 }
-/*Media Query*/
+/*Media Query para celular*/
 
 @media (max-width: 480px){
     header {
@@ -275,11 +278,12 @@ footer div span{
     main .sinopsis {
         margin: 20px auto;
         border-radius: 10px;
-        background-color: rgba(245, 245, 220, 0.507);
-        background-image: url(../imagenes/Imagen_header2.png);
-        background-repeat: no-repeat;
+        background-image: url(../imagenes/Imagen_header_opaco.png);
+        background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
         padding: 30px;
+        font-size: 25px;
     }
 
     .ver-serie{
@@ -288,5 +292,96 @@ footer div span{
         align-items: center;
         text-align: center;
     }
+    .ver_serie_texto p{
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .mi_biografia{
+        background-size: 100% 100%;
+    }
+    .container{
+        width: auto;
+        padding: 0px;
+    }
+    .mi_biografia div p{
+        text-align: justify;
+        font-size: 15px;                  
+    }
+    .mi_biografia p a{
+        font-size: 12px;
+        color: black;        
+    }
+}
+
+/*Media Query para tablet*/
+
+@media (max-width: 880px){
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
+    
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    nav ul li a{
+        font-size: 25px;
+        font-weight: bold;    
+        
+    }
+    nav ul li{
+        padding: 10px;
+        margin: 5px; 
+                
+    }
+    nav ul li :hover{
+        border: 2px solid rgb(87, 86, 86);
+        border-radius: 15px;  
+    }
+
+    main .sinopsis .imagen-sinopsis img{
+        display: none;
+        
+    }
+    main .sinopsis {
+        margin: 20px auto;
+        border-radius: 10px;
+        background-image: url(../imagenes/Imagen_header_opaco.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    .ver-serie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ver_serie_texto p{
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .mi_biografia{
+        background-size: 100% 100%;
+    }
+    .container{
+        width: auto;
+        padding: 0px;
+    }
+    .mi_biografia div p{
+        text-align: justify;
+        font-size: 15px;                  
+    }
+    .mi_biografia p a{
+        font-size: 12px;
+        color: black;        
+    }
 }
