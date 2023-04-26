@@ -5,7 +5,7 @@
     
 }
 body{
-    background-image: url(../imagenes/Fondo_imagen2.jpg);
+    background-image:url(../imagenes/Fondo_Imagen2.jpg);
     background-repeat: no-repeat;
     background-color: #2729a8;
     background-size: cover;
@@ -16,7 +16,7 @@ body{
 }
 
 .mi_biografia{
-    background-image: url(../imagenes/Foto_Bio.JPG);
+    background-image: url(../imagenes/Foto_Bio.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #cccccc;
